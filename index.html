@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raneem And Emaan</title>
+
+    <style>
+        body {
+            color: white;
+            /* background-color: rgb(188, 80, 255); */
+            background-image: url('bgimage.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            display: block;
+            border: 2px solid black;
+            background-color: black;
+
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px solid black;
+            color: rgb(128, 0, 0);
+
+        }
+
+        h2 {
+            display: block;
+            text-align: center;
+            color: black;
+        }
+
+        img {
+            margin-top: 5px;
+            margin-right: 5px;
+            border: 2px solid black;
+
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        .image {
+            /* display: grid;
+            grid-template-columns: 1fr 3fr 10fr; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            border: 3px solid black;
+            padding: 20px;
+            color: rgb(128, 0, 0);
+        }
+
+        .captions {
+            /* display: block;
+            border: 2px solid black;
+            margin-top: 5px; */
+            padding-left: 15px;
+            /* align-content: center; */
+
+        }
+
+        .captions p {
+            text-align: center;
+            padding-left: 5px;
+        }
+
+        .captions h2 {
+            display: block;
+            border: 2px solid black;
+
+        }
+
+        .favmemory {
+            display: block;
+            border: 2px solid black;
+            padding-bottom: 5px;
+            color: rgb(128, 0, 0);
+        }
+
+        .favmemory h2 {
+            display: block;
+            border: 5px solid black;
+            width: fit-content;
+            margin: 20px auto;
+            /* Center the section */
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Bucketlist {
+            justify-content: center;
+            text-align: center;
+            border: 2px solid black;
+            padding-top: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            color: rgb(128, 0, 0);
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .Bucketlist h2 {
+            display: block;
+            border: 5px solid black;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        .Photogallery h2 {
+            display: block;
+            border: 5px solid black;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        .Photogallery {
+            color: rgb(128, 0, 0);
+            border: 2px solid black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap;
+            overflow: hidden; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .ending {
+            display: block;
+            border: 2px solid black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: rgb(128, 0, 0);
+
+        }
+
+        .ending h2 {
+            display: block;
+            border: 5px solid black;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        .ending footer {
+            color: rgb(128, 0, 0);
+            display: block;
+        }
+
+        @media (min-width: 440px) and (max-width: 864px) {
+            body {
+                background-image: url('bgimage.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: white;
+            }
+
+            .image {
+                /* display: grid;
+            grid-template-columns: 1fr 3fr 10fr; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                border: 3px solid black;
+                padding: 20px;
+                color: rgb(128, 0, 0);
+            }
+
+            .res_image {
+                width: 350px;
+            }
+
+            .photos {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 440px) {
+            body {
+                background-image: url('bgimage.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: white;
+            }
+
+            .image {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                border: 3px solid black;
+                padding: 20px;
+                color: rgb(128, 0, 0);
+            }
+
+            .res_image {
+                width: 275px;
+            }
+
+            .photos {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .firstyear {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To our friendship</h1>
+    <div class="intro">
+        <div>
+            <h2>HOW WE MET</h2>
+            <p>It was my first week in a new college. <strong>ONE AND ONLY APS HUMAYUN</strong>. I remember my first
+                impression of you, Emaan—I didn't quite like you at first. You were always talking, almost like a
+                teacher's pet, which annoyed me. But then, one day, we decided to go to McDonald's. I was annoyed that
+                you came, but guess what? It turned out to be the best thing ever. That day totally changed my mind
+                about you. As we hung out more, I realized you're not just a friend, but my bestie, my sister. Love ya
+                loads! (Once I get better at web development, I'll set up a box where you can share your first
+                impression too, but for now, this is mine.)</p>
+        </div>
+    </div>
+    <div class="image">
+        <img src="macdonalds1.jpg" alt="stupid picture" height="250px" width="400px" class="res_image">
+        <div class="image2">
+            <img src="macdonalds2.jpg" alt="no image" height="400px" width="250px">
+        </div>
+        <div class="captions">
+            <p>
+            <h2>Photo 1</h2>
+            Who knew McDonald's could serve up a side of best friends with every meal?
+            <h2>photo 2</h2>
+            When your squad looks like they're about to drop the hottest mixtape of the year... in the sunglasses aisle.
+            <h2>Captions are definitely not <strong>chatgpted</strong></h2>
+            </p>
+        </div>
+    </div>
+    <div class="favmemory">
+        <h2>FAVORITE MEMORY</h2>
+        <p>We've been together for more than three years now. My favorite memory of ours is when you messaged me saying
+            that your parents were going grocery shopping, and I jokingly suggested they drop you off at my place—and
+            they did! That was such a great day. Eventhough we had little money, we decided to go to Cheezious and
+            walked till there. I still remember us waiting for the bill, praying we had enough money to pay it. And not
+            to forget the mini vlogs we made that day. I love this memory and will cherish it forever.</p>
+        <div class="photos">
+            <img src="cheezious1.jpg" alt="no image" height="250px" width="400px" class="res_image">
+
+            <img src="cheezious2.jpg" alt="no image" height="250px" width="400px" class="res_image">
+
+        </div>
+    </div>
+    <div class="Bucketlist">
+        <h2>BUCKET LIST</h2>
+        <p>
+            The things we have to do atleast once in our lives together:
+        <ul>
+            <li><strong>Sleepover</strong></li>
+            <li><strong>A trip to northern areas</strong></li>
+            <li><strong>A road trip</strong></li>
+            <li><strong>Go to a concert</strong></li>
+            <li><strong>A book date (THIS IS A MUST)</strong></li>
+        </ul>
+        There are many more things as well but these are the ones that are coming to my mind for now!!!
+        </p>
+    </div>
+    <div class="Photogallery">
+        <h2>PHOTO GALLERY</h2>
+        <p>Here are some of our best photos together!</p>
+        <p>
+        <h2>The Welcome day</h2>
+        </p>
+        <img src="welcome1.jpg" alt="no image" width="250px" height="350px">
+        <img src="welcome2.jpg" alt="no image" width="250px" height="350px">
+        <img src="welcome3.jpg" alt="no image" width="250px" height="350px">
+        <img src="welcome4.jpg" alt="no image" width="250px" height="350px">
+        <p>
+        <h2>Emaan House</h2>
+        </p>
+        <img src="emaanhouse1.jpg" alt="no image" width="250px" height="350px">
+        <img src="emaanhouse2.jpg" alt="no image" width="250px" height="350px">
+        <img src="emaaninherhouse.jpg" alt="no image" width="250px" height="350px">
+        <img src="eating.jpg" alt="no image" width="250px" height="350px">
+        <img src="cuteus.jpg" alt="no image" width="250px" height="350px">
+        <img src="meetup.jpg" alt="no image" width="250px" height="350px">
+        <img src="90s.jpg" alt="no image" width="250px" height="350px">
+        <p>
+        <h2>The pictures for which I have no caption</h2>
+        </p>
+        <img src="joyland1.jpg" alt="no image" width="250px" height="350px">
+        <img src="lastdayfirstyear.jpg" alt="no image" width="450px" height="350px" class="firstyear">
+        <img src="greenvalley.jpg" alt="no image" width="250px" height="350px">
+        <img src="csd.jpg" alt="no image" width="250px" height="350px">
+        <img src="maahamhouse.jpg" alt="no image" width="250px" height="350px">
+    </div>
+    <div class="ending">
+        <p><strong>I have made this website with so much love and enjoyed every moment during its creation. To be
+                honest, I am so proud of myself... lol. While making it, I relived all the beautiful memories we have
+                made together, and I hope we will keep making many more. Cheers to our friendship!</strong></p>
+        <h2>THE END</h2>
+        <footer>&copy; 2024 Raneem</footer>
+    </div>
+</body>
+
+</html>
